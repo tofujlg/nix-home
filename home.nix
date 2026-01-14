@@ -18,6 +18,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+    pkgs.btop
     pkgs.cowsay
     pkgs.kanata
     pkgs.delta
@@ -51,6 +52,7 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
 
+    ".config/btop/btop.conf".source = ./dotfiles/btop/btop.conf;
     ".config/lazygit/config.yml".source = ./dotfiles/lazygit/config.yml;
   };
 
