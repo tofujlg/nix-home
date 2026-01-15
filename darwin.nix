@@ -5,6 +5,8 @@
   environment.systemPackages = [
   ];
 
+  system.primaryUser = "tofuredbull";
+
   # MacOS system settings
   system.defaults = {
     dock.autohide = true;

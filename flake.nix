@@ -21,7 +21,7 @@
     };
 
     # macOS
-    darwinConfigurations."macbook" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."tofuredbull" = nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
         ./darwin.nix
