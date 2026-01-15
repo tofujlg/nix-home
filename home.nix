@@ -24,6 +24,7 @@
     pkgs.delta
     pkgs.lazygit
     pkgs.wireguard-tools
+    pkgs.yazi
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -55,6 +56,8 @@
 
     ".config/btop/btop.conf".source = ./dotfiles/btop/btop.conf;
     ".config/lazygit/config.yml".source = ./dotfiles/lazygit/config.yml;
+    ".config/yazi/keymap.toml".source = ./dotfiles/yazi/keymap.toml;
+    ".config/yazi/theme.toml".source = ./dotfiles/yazi/theme.toml;
   };
 
   # Home Manager can also manage your environment variables through
