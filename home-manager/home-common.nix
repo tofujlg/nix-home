@@ -6,6 +6,7 @@
     pkgs.btop
     pkgs.cowsay
     pkgs.delta
+    pkgs.kanata
     pkgs.lazygit
     pkgs.yazi
   ];
