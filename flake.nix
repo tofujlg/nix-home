@@ -17,19 +17,19 @@
     # Arch Linux
     homeConfigurations."jujekebab" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      modules = [ ./home.nix ];
+      modules = [ ./home-manager/home-arch.nix];
     };
 
     # macOS
     darwinConfigurations."tofuredbull" = nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
-        ./darwin.nix
+        ./hosts/darwin.nix
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.tofuredbull = import ./home-darwin.nix;
+          home-manager.users.tofuredbull = import ./home-manager/home-darwin.nix;
         }
       ];
     };
