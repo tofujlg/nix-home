@@ -35,6 +35,12 @@
   , (tap-hold $tap-time $hold-time , (multi rmet rsft ralt rctl))
 )
 
+;; jk to esc
+(defchordsv2
+  (j k) esc 50 first-release (num fn)
+  (k l) ret 50 first-release (num fn)
+)
+
 (deflayer base
   brdn  brup  _    _    _    _   prev  pp  next  mute  vold  volu
   @capslock @a @s @d @f @h @j @k @l @;

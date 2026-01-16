@@ -7,8 +7,7 @@ nix run home-manager -- switch --flake .#jujekebab
 ```
 
 
-## Pacman pkgs
-- [ ] yazi
+## Arch
 - [ ] zoxide
 - [ ] zsh
 - [ ] bat
@@ -16,49 +15,66 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] cmatrix
 - [ ] eza
 - [ ] fzf
-- [ ] git
 - [ ] github-cli
-- [ ] hazkey-zenzai-vulkan
 - [ ] jq
+- [ ] fd
+- [ ] kitty
+- [ ] wofi
+- [ ] man-db
+- [ ] hazkey-zenzai-vulkan
 - [ ] 7zip
-- [ ] ags-hyprpanel-git
-- [ ] base
-- [ ] base-devel
-- [ ] bc
-- [ ] bitwarden
 - [ ] blueman
 - [ ] bluez
 - [ ] bluez-utils
-- [ ] brave-bin
-- [ ] chezmoi
-- [ ] chromium
 - [ ] cliphist
 - [ ] dmenu
 - [ ] dolphin
+- [ ] hypridle
+- [ ] obs-studio
+- [ ] obsidian
+- [ ] waybar
+- [ ] rofi
+- [ ] hyprland
+- [ ] hyprlock
+- [ ] hyprpicker
+
+## Common
+- [ ] git
+- [ ] neovim
+- [ ] tmux
+- [ ] vim
+- [ ] uv
+- [ ] fastfetch
+- [ ] htop
+
+## gui
+- [ ] zen-browser-bin
+- [ ] brave-bin
+- [ ] chromium
+- [ ] firefox
+
+## remove
+- [ ] chezmoi
+- [ ] fabric-ai
+
+## To sort
+- [ ] ags-hyprpanel-git
+- [ ] bitwarden
+- [ ] bc
 - [ ] dosfstools
 - [ ] dunst
 - [ ] efibootmgr
-- [ ] fabric-ai
-- [ ] fastfetch
 - [ ] fcitx5
 - [ ] fcitx5-configtool
-- [ ] fd
-- [ ] firefox
 - [ ] gnumeric
 - [ ] grim
 - [ ] grub
 - [ ] gst-plugin-pipewire
-- [ ] htop
-- [ ] hypridle
-- [ ] hyprland
-- [ ] hyprlock
-- [ ] hyprpicker
 - [ ] imagemagick
 - [ ] intel-media-driver
 - [ ] intel-ucode
 - [ ] iwd
 - [ ] kde-cli-tools
-- [ ] kitty
 - [ ] kvantum
 - [ ] less
 - [ ] libinput-tools
@@ -66,19 +82,15 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] libva-intel-driver
 - [ ] linux
 - [ ] linux-firmware
-- [ ] man-db
 - [ ] mtools
 - [ ] nano
 - [ ] ncpamixer-git
-- [ ] neovim
 - [ ] network-manager-applet
 - [ ] networkmanager
 - [ ] noto-fonts
 - [ ] noto-fonts-cjk
 - [ ] noto-fonts-emoji
 - [ ] nwg-look
-- [ ] obs-studio
-- [ ] obsidian
 - [ ] os-prober
 - [ ] otf-font-awesome
 - [ ] papirus-folders
@@ -97,7 +109,6 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] qt6-wayland
 - [ ] qt6ct
 - [ ] resvg
-- [ ] rofi
 - [ ] sassc
 - [ ] sddm
 - [ ] slurp
@@ -105,26 +116,21 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] sof-firmware
 - [ ] sudo
 - [ ] swww
-- [ ] tmux
 - [ ] ttf-dejavu-nerd
 - [ ] ttf-jetbrains-mono-nerd
 - [ ] ttf-liberation
 - [ ] unzip
-- [ ] uv
 - [ ] uwsm
-- [ ] vim
 - [ ] visidata
 - [ ] vulkan-intel
 - [ ] vulkan-nouveau
 - [ ] vulkan-radeon
 - [ ] w3m
-- [ ] waybar
 - [ ] wget
 - [ ] wireless_tools
 - [ ] wireplumber
 - [ ] wl-clipboard
 - [ ] woff2-font-awesome
-- [ ] wofi
 - [ ] wpa_supplicant
 - [ ] xdg-desktop-portal-gtk
 - [ ] xdg-desktop-portal-hyprland
@@ -137,6 +143,6 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] xpad
 - [ ] yay
 - [ ] yay-debug
-- [ ] zen-browser-bin
 - [ ] zip
 - [ ] zram-generator
+
