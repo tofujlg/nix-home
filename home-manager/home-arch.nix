@@ -25,6 +25,19 @@
     ".config/lazygit/config.yml".source = ./dotfiles/lazygit/config.yml;
     ".config/yazi/keymap.toml".source = ./dotfiles/yazi/keymap.toml;
     ".config/yazi/theme.toml".source = ./dotfiles/yazi/theme.toml;
+
+    # Wayland / Hyprland
+    ".config/hypr/hyprland.conf".source = ./dotfiles/hypr/hyprland.conf;
+    ".config/hypr/hypridle.conf".source = ./dotfiles/hypr/hypridle.conf;
+    ".config/hypr/hyprlock.conf".source = ./dotfiles/hypr/hyprlock.conf;
+
+    # Waybar
+    ".config/waybar/config.jsonc".source = ./dotfiles/waybar/config.jsonc;
+    ".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
+    ".config/waybar/scripts/launch.sh" = {
+      source = ./dotfiles/waybar/scripts/launch.sh;
+      executable = true;
+    };
   };
 
   # Home Manager can also manage your environment variables through
