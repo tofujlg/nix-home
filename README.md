@@ -6,10 +6,15 @@
 nix run home-manager -- switch --flake .#jujekebab
 ```
 
-
-## Arch
+## Common
+- [ ] git
+- [ ] neovim
+- [ ] tmux
+- [ ] vim
+- [ ] uv
+- [ ] fastfetch
+- [ ] htop
 - [ ] zoxide
-- [ ] zsh
 - [ ] bat
 - [ ] claude-code
 - [ ] cmatrix
@@ -18,9 +23,14 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] github-cli
 - [ ] jq
 - [ ] fd
-- [ ] kitty
 - [ ] wofi
 - [ ] man-db
+- [ ] obsidian
+- [ ] bitwarden
+
+## Arch
+- [ ] zsh
+- [ ] kitty
 - [ ] hazkey-zenzai-vulkan
 - [ ] 7zip
 - [ ] blueman
@@ -31,21 +41,12 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] dolphin
 - [ ] hypridle
 - [ ] obs-studio
-- [ ] obsidian
 - [ ] waybar
 - [ ] rofi
 - [ ] hyprland
 - [ ] hyprlock
 - [ ] hyprpicker
 
-## Common
-- [ ] git
-- [ ] neovim
-- [ ] tmux
-- [ ] vim
-- [ ] uv
-- [ ] fastfetch
-- [ ] htop
 
 ## gui
 - [ ] zen-browser-bin
@@ -59,7 +60,6 @@ nix run home-manager -- switch --flake .#jujekebab
 
 ## To sort
 - [ ] ags-hyprpanel-git
-- [ ] bitwarden
 - [ ] bc
 - [ ] dosfstools
 - [ ] dunst
