@@ -12,7 +12,8 @@
   # Arch-specific packages
   home.packages = [
     pkgs.wireguard-tools
-
+    pkgs.emacs
+    pkgs.ripgrep
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
