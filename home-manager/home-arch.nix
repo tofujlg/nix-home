@@ -12,7 +12,7 @@
   # Arch-specific packages
   home.packages = [
     pkgs.wireguard-tools
-    pkgs.emacs
+    pkgs.emacs-pgtk
     pkgs.ripgrep
     pkgs.hugo
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
