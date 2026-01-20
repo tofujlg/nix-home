@@ -7,7 +7,6 @@ nix run home-manager -- switch --flake .#jujekebab
 ```
 
 ## Common
-- [ ] git
 - [ ] neovim
 - [ ] tmux
 
@@ -26,9 +25,7 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] dolphin
 - [ ] hypridle
 - [ ] obs-studio
-- [ ] waybar
 - [ ] rofi
-- [ ] hyprland
 - [ ] hyprlock
 - [ ] hyprpicker
 
