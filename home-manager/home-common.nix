@@ -27,4 +27,8 @@
     icons = "auto";
     git = true;
   };
+
+  programs.zoxide = {
+    enable = true;
+  };
 }

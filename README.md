@@ -13,23 +13,20 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] vim
 - [ ] uv
 - [ ] fastfetch
-- [ ] htop
 - [ ] zoxide
 - [ ] bat
 - [ ] claude-code
 - [ ] cmatrix
-- [ ] eza
 - [ ] fzf
 - [ ] github-cli
 - [ ] jq
 - [ ] fd
 - [ ] wofi
 - [ ] man-db
-- [ ] obsidian
 - [ ] bitwarden
 
 ## Arch
-- [ ] zsh
+- [ ] zsh-config
 - [ ] kitty
 - [ ] hazkey-zenzai-vulkan
 - [ ] 7zip
@@ -47,12 +44,12 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] hyprlock
 - [ ] hyprpicker
 
-
 ## gui
 - [ ] zen-browser-bin
 - [ ] brave-bin
 - [ ] chromium
 - [ ] firefox
+- [ ] obsidian
 
 ## remove
 - [ ] chezmoi
@@ -75,6 +72,7 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] intel-ucode
 - [ ] iwd
 - [ ] kde-cli-tools
+- [ ] htop
 - [ ] kvantum
 - [ ] less
 - [ ] libinput-tools
