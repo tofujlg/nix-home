@@ -15,10 +15,7 @@
     pkgs.emacs-pgtk
     pkgs.ripgrep
     pkgs.hugo
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
+    pkgs.peco
   ];
 
     # Dotfiles

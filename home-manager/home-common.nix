@@ -21,4 +21,10 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.eza = {
+    enable = true;
+    icons = "auto";
+    git = true;
+  };
 }
