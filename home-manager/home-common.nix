@@ -13,6 +13,7 @@
     pkgs.jq
     pkgs.kanata
     pkgs.lazygit
+    pkgs.uv
     pkgs.yazi
   ];
 

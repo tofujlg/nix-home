@@ -10,8 +10,6 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] git
 - [ ] neovim
 - [ ] tmux
-- [ ] uv
-- [ ] man-db
 
 ## Arch
 - [ ] cmatrix
