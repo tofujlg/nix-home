@@ -23,6 +23,7 @@
     ".config/lazygit/config.yml".source = ./dotfiles/lazygit/config.yml;
     ".config/yazi/keymap.toml".source = ./dotfiles/yazi/keymap.toml;
     ".config/yazi/theme.toml".source = ./dotfiles/yazi/theme.toml;
+    ".config/yazi/yazi.toml".source = ./dotfiles/yazi/yazi.toml;
   };
 
   # Let Home Manager install and manage itself.

@@ -51,6 +51,21 @@
 
   programs.home-manager.enable = true;
 
+  # SSH Agent systemd service
+  systemd.user.services.ssh-agent = {
+    Unit = {
+      Description = "SSH key agent";
+    };
+    Service = {
+      Type = "simple";
+      Environment = "SSH_AUTH_SOCK=%t/ssh-agent.socket";
+      ExecStart = "${pkgs.openssh}/bin/ssh-agent -D -a %t/ssh-agent.socket";
+    };
+    Install = {
+      WantedBy = [ "default.target" ];
+    };
+  };
+
   programs.zoxide.options = [ "--cmd" "cd" ];
 
   programs.zsh = {
@@ -109,6 +124,9 @@
 
       # PATH
       export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+
+      # thefuck
+      eval $(thefuck --alias)
 
       # SDKMAN (must be at end)
       [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
