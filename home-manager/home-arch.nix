@@ -50,4 +50,68 @@
   };
 
   programs.home-manager.enable = true;
+
+  programs.zoxide.options = [ "--cmd" "cd" ];
+
+  programs.zsh = {
+    enable = true;
+
+    oh-my-zsh = {
+      enable = true;
+      theme = "robbyrussell";
+      plugins = [ "git" ];
+    };
+
+    shellAliases = {
+      lg = "lazygit";
+      cat = "bat";
+      ls = "eza";
+      ll = "eza --color=always --long --git --no-filesize --icons=always --no-time --no-user";
+      v = "nvim";
+      vi = "nvim";
+      vim = "nvim";
+      view = "nvim -R";
+      nvim-lazy = "NVIM_APPNAME=LazyVim nvim";
+      kim = "NVIM_APPNAME=kickstart nvim";
+    };
+
+    sessionVariables = {
+      EDITOR = "nvim";
+      GOROOT = "/usr/local/go";
+      GOPATH = "$HOME/go";
+      SSH_AUTH_SOCK = "$XDG_RUNTIME_DIR/ssh-agent.socket";
+      SDKMAN_DIR = "$HOME/.sdkman";
+    };
+
+    initExtra = ''
+      # Neovim config switcher
+      function nvims() {
+        items=("default" "kickstart" "LazyVim" )
+        config=$(printf "%s\n" "''${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+        if [[ -z $config ]]; then
+          echo "Nothing selected"
+          return 0
+        elif [[ $config == "default" ]]; then
+          config=""
+        fi
+        NVIM_APPNAME=$config nvim $@
+      }
+
+      # Yazi wrapper
+      function y() {
+        local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+        yazi "$@" --cwd-file="$tmp"
+        if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+          builtin cd -- "$cwd"
+        fi
+        rm -f -- "$tmp"
+      }
+
+      # PATH
+      export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+
+      # SDKMAN (must be at end)
+      [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+    '';
+  };
 }
