@@ -3,9 +3,13 @@
 {
   # Common packages for all hosts
   home.packages = [
+    pkgs.bat
     pkgs.btop
     pkgs.cowsay
     pkgs.delta
+    pkgs.fastfetch
+    pkgs.fd
+    pkgs.jq
     pkgs.kanata
     pkgs.lazygit
     pkgs.yazi
@@ -29,6 +33,10 @@
   };
 
   programs.zoxide = {
+    enable = true;
+  };
+
+  programs.fzf = {
     enable = true;
   };
 }

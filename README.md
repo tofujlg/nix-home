@@ -10,22 +10,15 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] git
 - [ ] neovim
 - [ ] tmux
-- [ ] vim
 - [ ] uv
-- [ ] fastfetch
-- [ ] zoxide
-- [ ] bat
 - [ ] claude-code
 - [ ] cmatrix
-- [ ] fzf
 - [ ] github-cli
-- [ ] jq
-- [ ] fd
-- [ ] wofi
 - [ ] man-db
 - [ ] bitwarden
 
 ## Arch
+- [ ] wofi
 - [ ] zsh-config
 - [ ] kitty
 - [ ] hazkey-zenzai-vulkan
