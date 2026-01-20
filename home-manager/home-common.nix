@@ -9,6 +9,7 @@
     pkgs.delta
     pkgs.fastfetch
     pkgs.fd
+    pkgs.gh
     pkgs.jq
     pkgs.kanata
     pkgs.lazygit
@@ -37,6 +38,10 @@
   };
 
   programs.fzf = {
+    enable = true;
+  };
+
+  programs.man = {
     enable = true;
   };
 }

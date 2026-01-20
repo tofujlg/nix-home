@@ -11,13 +11,10 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] neovim
 - [ ] tmux
 - [ ] uv
-- [ ] claude-code
-- [ ] cmatrix
-- [ ] github-cli
 - [ ] man-db
-- [ ] bitwarden
 
 ## Arch
+- [ ] cmatrix
 - [ ] wofi
 - [ ] zsh-config
 - [ ] kitty
@@ -38,6 +35,7 @@ nix run home-manager -- switch --flake .#jujekebab
 - [ ] hyprpicker
 
 ## gui
+- [ ] bitwarden
 - [ ] zen-browser-bin
 - [ ] brave-bin
 - [ ] chromium
