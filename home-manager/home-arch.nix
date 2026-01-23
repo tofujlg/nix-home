@@ -87,7 +87,8 @@
       vim = "nvim";
       view = "nvim -R";
       nvim-lazy = "NVIM_APPNAME=LazyVim nvim";
-      kim = "NVIM_APPNAME=kickstart nvim";
+      lvim = "NVIM_APPNAME=lazyvim nvim";
+      om = "NVIM_APPNAME=obsidian_nvim nvim";
     };
 
     sessionVariables = {
@@ -101,7 +102,7 @@
     initExtra = ''
       # Neovim config switcher
       function nvims() {
-        items=("default" "kickstart" "LazyVim" )
+        items=("default" "kickstart" "LazyVim" "obsidian_nvim" )
         config=$(printf "%s\n" "''${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
         if [[ -z $config ]]; then
           echo "Nothing selected"

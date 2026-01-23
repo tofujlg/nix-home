@@ -45,7 +45,7 @@ button:hover {
     transition: 0.2s ease-in-out;
     padding: 0 5px;
     background-color: @bg;
-    color: @cursor;
+    color: #888888;
 }
 
 #workspaces button:hover {
@@ -62,8 +62,8 @@ button:hover {
 }
 
 #workspaces button.active {
-    background-color: #e8eaed;
-    color: #000000;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 #mode {
