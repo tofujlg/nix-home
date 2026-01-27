@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./programs/tmux.nix
+  ];
+
   # Common packages for all hosts
   home.packages = [
     pkgs.bat
